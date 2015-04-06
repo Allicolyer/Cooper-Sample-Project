@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<script src="http://code.jquery.com/jquery-latest.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+
+				var food = prompt("What is your favorite food?");
+				var foodlength = food.length
+			
+			if (food.substring(foodlength-1, foodlength) === "s")
+			{
+				var howmany = prompt("how many " + food + " do you eat a day?")
+				var plural = food
+			}
+			else {
+				var howmany = prompt("how many " + food + "s do you eat a day?")
+				var plural = food + "s"
+			}
+
+		 		var text = "<h2 class = food>" + "You eat " + howmany + " " +plural + " a day. If you eat " + foodlength + " a day you will eventually be able to run " + (foodlength+4) + " miles." + "</h2>" 
+
+				$("body").html(text);
+
+				// $("body").append(foodHTML);
+	
+			})
+		</script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+	</head>
+	<body>
+
+	</body>
+</html>

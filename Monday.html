@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <script src="http://code.jquery.com/jquery-latest.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+
+                var response = prompt("What are you?");
+                var output = "<h1>" + response  + "</h1>";
+                var text = output +" is really gross";
+                $("body").html(text);
+
+                var question = prompt("how old are you?")
+                    if (question >= 21) 
+                        {  $("body").append(" and you are allowed to drink") } 
+                    else { $("body").append (" and you are underage")}
+
+                var color = prompt("what is your favorite color?")
+
+    
+            })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
